@@ -1,5 +1,5 @@
 def oxford_comma(array)
-   if array.length == 1 # need to use the ==...
+    if array.length == 1 # need to use the ==...
       outcome = array[0] 
     elsif array.length == 2
       outcome = array[0..1].join(" and ")
@@ -8,7 +8,6 @@ def oxford_comma(array)
       # this is sort a mind**** because I am subtracting 1 from the length and then subtracting another 1 to account for index
       outcome = [array[0..array_length_less_one].join(", "), array.last].join(", and ")
     end
-  # array[0..-2].join(" and")
   outcome
 end
 
